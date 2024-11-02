@@ -54,5 +54,42 @@ def calculate_card_expenses(start_date):
     }
 
 
+def get_top_transactions(start_date, n=5):
+    """Возвращает топ-5 транзакций по сумме платежа за период от start_date до настоящего времени."""
+    transactions = read_transactions_from_excel()
+
+    # Проверка, есть ли данные в DataFrame
+    if transactions.empty:
+        return {"top_transactions": []}
+
+    # Преобразуем start_date в datetime
+    start_date = pd.to_datetime(start_date, format="%d-%m-%Y")
+
+    # Фильтруем транзакции по дате
+    transactions['Дата операции'] = pd.to_datetime(transactions['Дата операции'], format="%d.%m.%Y %H:%M:%S")
+    filtered_transactions = transactions[transactions['Дата операции'] >= start_date]
+
+    # Извлекаем необходимые столбцы и фильтруем по количеству
+    top_transactions = filtered_transactions.nlargest(n, 'Сумма платежа')[
+        ['Дата операции', 'Сумма платежа', 'Категория', 'Описание']]
+
+    # Формируем список для JSON-ответа
+    result = []
+    for index, row in top_transactions.iterrows():
+        result.append({
+            "date": row['Дата операции'].strftime("%d.%m.%Y"),
+            "amount": row['Сумма платежа'],
+            "category": row['Категория'],
+            "description": row['Описание']
+        })
+
+    return {
+        "top_transactions": result
+    }
+
+
 # Пример вызова функции
 print(calculate_card_expenses("22-12-2021"))  # Указать дату в нужном формате
+print(get_top_transactions("22-12-2021"))  # Укажите дату в формате "дд-мм-гггг"
+
+
