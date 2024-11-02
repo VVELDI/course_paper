@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93d318a9-388c-46ae-bf6f-a6bc06d0f64d" name="Changes" comment="Написал функцию,которая возвращает словарь с данными по всем картам за определенный период">
+    <list default="true" id="93d318a9-388c-46ae-bf6f-a6bc06d0f64d" name="Changes" comment="Написал функцию,которая возвращает словарь с данными по всем картам за определенный период, и функцию которая показывает top 5 транзакций за этот период">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +54,7 @@
   "keyToString": {
     "Python.transaction_parser.executor": "Run",
     "Python.utils.executor": "Run",
+    "Python.views.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "feature/course__paper",
@@ -104,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730542134317</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Написал функцию,которая возвращает словарь с данными по всем картам за определенный период, и функцию которая показывает top 5 транзакций за этот период">
+      <option name="closed" value="true" />
+      <created>1730542520866</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730542520866</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +145,7 @@
     <MESSAGE value="Создал структуру проекта" />
     <MESSAGE value="Написал функцию которая читай файл XLSX" />
     <MESSAGE value="Написал функцию,которая возвращает словарь с данными по всем картам за определенный период" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написал функцию,которая возвращает словарь с данными по всем картам за определенный период" />
+    <MESSAGE value="Написал функцию,которая возвращает словарь с данными по всем картам за определенный период, и функцию которая показывает top 5 транзакций за этот период" />
+    <option name="LAST_COMMIT_MESSAGE" value="Написал функцию,которая возвращает словарь с данными по всем картам за определенный период, и функцию которая показывает top 5 транзакций за этот период" />
   </component>
 </project>

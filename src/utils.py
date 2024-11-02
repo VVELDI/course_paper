@@ -5,6 +5,21 @@ import pandas as pd
 from src.transaction_parser import read_transactions_from_excel
 
 
+def get_greeting():
+    """Возвращает приветствие в зависимости от текущего времени."""
+    current_time = datetime.now()
+    hour = current_time.hour
+
+    if 5 <= hour < 12:
+        return "Доброе утро"
+    elif 12 <= hour < 18:
+        return "Добрый день"
+    elif 18 <= hour < 23:
+        return "Добрый вечер"
+    else:
+        return "Доброй ночи"
+
+
 def calculate_card_expenses(start_date):
     """Расчет расходов по картам за указанный период."""
     transactions = read_transactions_from_excel()
@@ -49,9 +64,7 @@ def calculate_card_expenses(start_date):
         for digits, data in card_data.items()
     ]
 
-    return {
-        "cards": cards
-    }
+    return cards
 
 
 def get_top_transactions(start_date, n=5):
@@ -83,13 +96,9 @@ def get_top_transactions(start_date, n=5):
             "description": row['Описание']
         })
 
-    return {
-        "top_transactions": result
-    }
+    return result
 
 
 # Пример вызова функции
-print(calculate_card_expenses("22-12-2021"))  # Указать дату в нужном формате
-print(get_top_transactions("22-12-2021"))  # Укажите дату в формате "дд-мм-гггг"
-
-
+# print(calculate_card_expenses("22-12-2021"))  # Указать дату в нужном формате
+# print(get_top_transactions("22-12-2021"))  # Укажите дату в формате "дд-мм-гггг"
