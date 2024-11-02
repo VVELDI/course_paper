@@ -1,5 +1,5 @@
 import os
-
+import json
 import pandas as pd
 
 # Глобальная переменная для хранения пути к файлу
@@ -8,7 +8,9 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Путь к файлу operations.xlsx
 EXCEL_FILE_PATH = os.path.join(PROJECT_ROOT, '..', 'data', 'operations.xlsx')
-print(EXCEL_FILE_PATH)
+
+# Путь к файлу user_settings.json
+USER_SETTINGS_PATH = os.path.join(PROJECT_ROOT, '..', 'data', 'user_settings.json')
 
 
 def read_transactions_from_excel():
@@ -22,3 +24,8 @@ def read_transactions_from_excel():
     except Exception as e:
         print(f"Произошла ошибка при чтении файла: {e}")
         return pd.DataFrame()  # Возвращаем пустой DataFrame в случае ошибки
+
+
+def load_user_settings():
+    with open(USER_SETTINGS_PATH, 'r', encoding='utf-8') as file:
+        return json.load(file)
