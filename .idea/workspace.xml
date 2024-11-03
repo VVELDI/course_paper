@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93d318a9-388c-46ae-bf6f-a6bc06d0f64d" name="Changes" comment="Добавил функцию, которая показывает стоимость заданных пользователем валют в рублях">
+    <list default="true" id="93d318a9-388c-46ae-bf6f-a6bc06d0f64d" name="Changes" comment="Собрал в одно целое весь функционал для главной страницы.&#10;create_response возвращает json файл с необходимыми данными">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/external_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +52,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.external_api.executor": "Run",
+    "Python.services.executor": "Run",
     "Python.transaction_parser.executor": "Run",
     "Python.utils.executor": "Run",
     "Python.views.executor": "Run",
@@ -132,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730546775785</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Собрал в одно целое весь функционал для главной страницы.&#10;create_response возвращает json файл с необходимыми данными">
+      <option name="closed" value="true" />
+      <created>1730550901646</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730550901647</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +173,7 @@
     <MESSAGE value="Написал функцию,которая возвращает словарь с данными по всем картам за определенный период, и функцию которая показывает top 5 транзакций за этот период" />
     <MESSAGE value="Изменил return в функциях" />
     <MESSAGE value="Добавил функцию, которая показывает стоимость заданных пользователем валют в рублях" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил функцию, которая показывает стоимость заданных пользователем валют в рублях" />
+    <MESSAGE value="Собрал в одно целое весь функционал для главной страницы.&#10;create_response возвращает json файл с необходимыми данными" />
+    <option name="LAST_COMMIT_MESSAGE" value="Собрал в одно целое весь функционал для главной страницы.&#10;create_response возвращает json файл с необходимыми данными" />
   </component>
 </project>

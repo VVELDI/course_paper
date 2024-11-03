@@ -29,7 +29,7 @@ def create_response(start_date):
 
 
 # Пример вызова функции
-start_date = "22-12-2021"  # укажите нужную дату
-print(create_response(start_date))
+# start_date = "22-12-2021"  # укажите нужную дату
+# print(create_response(start_date))
 
 
