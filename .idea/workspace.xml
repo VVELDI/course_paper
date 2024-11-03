@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93d318a9-388c-46ae-bf6f-a6bc06d0f64d" name="Changes" comment="Собрал в одно целое весь функционал для главной страницы.&#10;create_response возвращает json файл с необходимыми данными">
+    <list default="true" id="93d318a9-388c-46ae-bf6f-a6bc06d0f64d" name="Changes" comment="Написал код к сервису &quot;Простой поиск&quot;. Ищет транзакции по ключевому слову в категории или описании">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.external_api.executor": "Run",
+    "Python.reports.executor": "Run",
     "Python.services.executor": "Run",
     "Python.transaction_parser.executor": "Run",
     "Python.utils.executor": "Run",
@@ -140,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730550901647</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Написал код к сервису &quot;Простой поиск&quot;. Ищет транзакции по ключевому слову в категории или описании">
+      <option name="closed" value="true" />
+      <created>1730631857687</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730631857687</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +182,7 @@
     <MESSAGE value="Изменил return в функциях" />
     <MESSAGE value="Добавил функцию, которая показывает стоимость заданных пользователем валют в рублях" />
     <MESSAGE value="Собрал в одно целое весь функционал для главной страницы.&#10;create_response возвращает json файл с необходимыми данными" />
-    <option name="LAST_COMMIT_MESSAGE" value="Собрал в одно целое весь функционал для главной страницы.&#10;create_response возвращает json файл с необходимыми данными" />
+    <MESSAGE value="Написал код к сервису &quot;Простой поиск&quot;. Ищет транзакции по ключевому слову в категории или описании" />
+    <option name="LAST_COMMIT_MESSAGE" value="Написал код к сервису &quot;Простой поиск&quot;. Ищет транзакции по ключевому слову в категории или описании" />
   </component>
 </project>
