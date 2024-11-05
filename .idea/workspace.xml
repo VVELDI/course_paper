@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93d318a9-388c-46ae-bf6f-a6bc06d0f64d" name="Changes" comment="Исправил логирование">
-      <change afterPath="$PROJECT_DIR$/tests/test_services.py" afterDir="false" />
+    <list default="true" id="93d318a9-388c-46ae-bf6f-a6bc06d0f64d" name="Changes" comment="написал тесты для ключевых модулей">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transaction_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/transaction_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_transaction_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_transaction_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,23 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in test_transaction_parser.py.executor": "Run",
-    "Python tests.Python tests in test_utils.py.executor": "Run",
-    "Python.external_api.executor": "Run",
-    "Python.reports.executor": "Run",
-    "Python.services.executor": "Run",
-    "Python.transaction_parser.executor": "Run",
-    "Python.utils.executor": "Run",
-    "Python.views.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "feature/course__paper",
-    "last_opened_file_path": "F:/SkyPro/Projects/homework/pythonProject1/data",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in test_transaction_parser.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_utils.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.external_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reports.executor&quot;: &quot;Run&quot;,
+    &quot;Python.services.executor&quot;: &quot;Run&quot;,
+    &quot;Python.transaction_parser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/course__paper&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/SkyPro/Projects/homework/pythonProject1/data&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\SkyPro\Projects\homework\pythonProject1\data" />
@@ -187,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730817884932</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="написал тесты для ключевых модулей">
+      <option name="closed" value="true" />
+      <created>1730820344429</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1730820344429</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +230,7 @@
     <MESSAGE value="Закомментировал пример вызова функции" />
     <MESSAGE value="добавил логирование" />
     <MESSAGE value="Исправил логирование" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправил логирование" />
+    <MESSAGE value="написал тесты для ключевых модулей" />
+    <option name="LAST_COMMIT_MESSAGE" value="написал тесты для ключевых модулей" />
   </component>
 </project>
