@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93d318a9-388c-46ae-bf6f-a6bc06d0f64d" name="Changes" comment="Написал код к сервису &quot;Простой поиск&quot;. Ищет транзакции по ключевому слову в категории или описании">
+    <list default="true" id="93d318a9-388c-46ae-bf6f-a6bc06d0f64d" name="Changes" comment="Закомментировал пример вызова функции">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transaction_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/transaction_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,21 +53,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.external_api.executor": "Run",
-    "Python.reports.executor": "Run",
-    "Python.services.executor": "Run",
-    "Python.transaction_parser.executor": "Run",
-    "Python.utils.executor": "Run",
-    "Python.views.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "feature/course__paper",
-    "last_opened_file_path": "F:/SkyPro/Projects/homework/pythonProject1/data",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.external_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reports.executor&quot;: &quot;Run&quot;,
+    &quot;Python.services.executor&quot;: &quot;Run&quot;,
+    &quot;Python.transaction_parser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/course__paper&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/SkyPro/Projects/homework/pythonProject1/data&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\SkyPro\Projects\homework\pythonProject1\data" />
@@ -148,7 +153,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730631857687</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Создал модуль reports.py.  Написал функцию, которая считает средние траты по дням недели за последние 3 месяца, начиная с переданной в функцию дату. Написал декоратор, который формирует отчет в json формате.">
+      <option name="closed" value="true" />
+      <created>1730638809520</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730638809520</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Закомментировал пример вызова функции">
+      <option name="closed" value="true" />
+      <created>1730638885554</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730638885554</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +204,8 @@
     <MESSAGE value="Добавил функцию, которая показывает стоимость заданных пользователем валют в рублях" />
     <MESSAGE value="Собрал в одно целое весь функционал для главной страницы.&#10;create_response возвращает json файл с необходимыми данными" />
     <MESSAGE value="Написал код к сервису &quot;Простой поиск&quot;. Ищет транзакции по ключевому слову в категории или описании" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написал код к сервису &quot;Простой поиск&quot;. Ищет транзакции по ключевому слову в категории или описании" />
+    <MESSAGE value="Создал модуль reports.py.  Написал функцию, которая считает средние траты по дням недели за последние 3 месяца, начиная с переданной в функцию дату. Написал декоратор, который формирует отчет в json формате." />
+    <MESSAGE value="Закомментировал пример вызова функции" />
+    <option name="LAST_COMMIT_MESSAGE" value="Закомментировал пример вызова функции" />
   </component>
 </project>
