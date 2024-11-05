@@ -6,7 +6,7 @@ import pandas as pd
 # Настройка логирования для transaction_parser.py
 log_dir = "logs"
 os.makedirs(log_dir, exist_ok=True)
-log_file = os.path.join(log_dir, "file_operations.log")
+log_file = os.path.join(log_dir, "file_operatdions.log")
 
 logger = logging.getLogger("transaction_parser")
 logger.setLevel(logging.INFO)
