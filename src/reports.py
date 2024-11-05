@@ -117,5 +117,5 @@ def spending_by_weekday(transactions: pd.DataFrame, date: Optional[str] = None) 
 # transactions = read_transactions_from_excel()
 # print("Загруженные данные транзакций:", transactions.head())  # Отображаем первые строки для проверки
 #
-# Запускаем функцию с сохранением результата в файл
+# # Запускаем функцию с сохранением результата в файл
 # result = spending_by_weekday(transactions, date="2021-12-31")

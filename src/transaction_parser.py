@@ -3,21 +3,18 @@ import json
 import logging
 import pandas as pd
 
-# Создаем папку logs, если её нет
-if not os.path.exists("logs"):
-    os.makedirs("logs")
+# Настройка логирования для transaction_parser.py
+log_dir = "logs"
+os.makedirs(log_dir, exist_ok=True)
+log_file = os.path.join(log_dir, "file_operations.log")
 
-# Настройка логирования
-LOG_FILE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs', 'file_operations.log')
-logging.basicConfig(
-    filename=LOG_FILE_PATH,
-    level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    encoding="utf-8",
-    filemode="w"
-)
+logger = logging.getLogger("transaction_parser")
+logger.setLevel(logging.INFO)
 
-logger = logging.getLogger(__name__)
+# Создание обработчика, записывающего логи в файл
+file_handler = logging.FileHandler(log_file, encoding="utf-8")
+file_handler.setFormatter(logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s"))
+logger.addHandler(file_handler)
 
 # Глобальные пути
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -57,5 +54,5 @@ def load_user_settings():
         return {}
 
 # Проверка функции логирования
-load_user_settings()
-print("Проверка завершена, проверьте файл логов.")
+# load_user_settings()
+# print("Проверка завершена, проверьте файл логов.")
