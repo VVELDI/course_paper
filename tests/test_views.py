@@ -1,7 +1,9 @@
 import json
-import pytest
 from unittest.mock import patch
-from src.views import create_response  # Измените импорт на правильный модуль
+
+import pytest
+
+from src.views import create_response
 
 
 @pytest.fixture

@@ -1,6 +1,7 @@
 import json
-from src.utils import get_greeting, calculate_card_expenses, get_top_transactions
+
 from src.external_api import get_currency_rates, get_stock_prices
+from src.utils import calculate_card_expenses, get_greeting, get_top_transactions
 
 
 def create_response(start_date):

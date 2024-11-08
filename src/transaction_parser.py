@@ -1,6 +1,7 @@
-import os
 import json
 import logging
+import os
+
 import pandas as pd
 
 # Настройка логирования для transaction_parser.py
@@ -21,6 +22,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 EXCEL_FILE_PATH = os.path.join(PROJECT_ROOT, '..', 'data', 'operations.xlsx')
 USER_SETTINGS_PATH = os.path.join(PROJECT_ROOT, '..', 'data', 'user_settings.json')
 
+
 def read_transactions_from_excel():
     """Считывает транзакции из Excel файла и возвращает их как DataFrame."""
     try:
@@ -34,6 +36,7 @@ def read_transactions_from_excel():
     except Exception as e:
         logger.error(f"Произошла ошибка при чтении файла {EXCEL_FILE_PATH}: {e}")
         return pd.DataFrame()
+
 
 def load_user_settings():
     """Загружает пользовательские настройки из JSON файла."""

@@ -1,7 +1,8 @@
 import json
 import logging
-from src.transaction_parser import read_transactions_from_excel
 import os
+
+from src.transaction_parser import read_transactions_from_excel
 
 # Настройка логирования для services.py
 log_dir = "logs"
@@ -15,6 +16,7 @@ logger.setLevel(logging.INFO)
 file_handler = logging.FileHandler(log_file, encoding="utf-8")
 file_handler.setFormatter(logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s"))
 logger.addHandler(file_handler)
+
 
 def search_transactions(search_str):
     """Возвращает JSON с транзакциями, содержащими поисковую строку в категории или описании."""
@@ -35,7 +37,7 @@ def search_transactions(search_str):
 
         # Фильтруем транзакции по совпадению строки в категории или описании
         mask = df["Категория"].str.contains(search_str, case=False, na=False) | \
-               df["Описание"].str.contains(search_str, case=False, na=False)
+            df["Описание"].str.contains(search_str, case=False, na=False)
         result_df = df[mask]
 
         # Преобразуем результат в список словарей и затем в JSON

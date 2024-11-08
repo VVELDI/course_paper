@@ -1,11 +1,11 @@
 import json
-import os
 import logging
+import os
 from datetime import datetime, timedelta
 from functools import wraps
 from typing import Optional
+
 import pandas as pd
-from src.transaction_parser import read_transactions_from_excel
 
 # Настройка логирования
 logging.basicConfig(

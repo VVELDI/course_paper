@@ -1,7 +1,7 @@
-import json
+import logging
 import os
 from datetime import datetime
-import logging
+
 import pandas as pd
 
 from src.transaction_parser import read_transactions_from_excel

@@ -1,8 +1,10 @@
-import pytest
-from unittest.mock import patch, MagicMock
 from datetime import datetime
+from unittest.mock import patch
+
 import pandas as pd
-from src.utils import get_greeting, calculate_card_expenses, get_top_transactions
+
+from src.utils import calculate_card_expenses, get_greeting, get_top_transactions
+
 
 # Тест для функции get_greeting
 @patch("src.utils.datetime")
@@ -19,6 +21,7 @@ def test_get_greeting(mock_datetime):
 
     mock_datetime.now.return_value = datetime(2023, 1, 1, 1)  # Ночь
     assert get_greeting() == "Доброй ночи"
+
 
 # Тест для функции calculate_card_expenses
 @patch("src.utils.read_transactions_from_excel")
@@ -42,6 +45,7 @@ def test_calculate_card_expenses(mock_read_transactions):
     assert expenses[1]["last_digits"] == "7654"
     assert expenses[1]["total_spent"] == 2000
     assert expenses[1]["cashback"] == 20.0
+
 
 # Тест для функции get_top_transactions
 @patch("src.utils.read_transactions_from_excel")
@@ -67,6 +71,7 @@ def test_get_top_transactions(mock_read_transactions):
     assert top_transactions[2]["amount"] == 100
     assert top_transactions[2]["category"] == "Продукты"
 
+
 # Тест для обработки пустых транзакций
 @patch("src.utils.read_transactions_from_excel")
 def test_calculate_card_expenses_empty(mock_read_transactions):
@@ -74,9 +79,11 @@ def test_calculate_card_expenses_empty(mock_read_transactions):
     start_date = "01-01-2022"
     assert calculate_card_expenses(start_date) == []
 
+
 @patch("src.utils.read_transactions_from_excel")
 def test_get_top_transactions_empty(mock_read_transactions):
-    mock_read_transactions.return_value = pd.DataFrame(columns=["Дата операции", "Сумма платежа", "Категория", "Описание"])
+    mock_read_transactions.return_value = pd.DataFrame(
+        columns=["Дата операции", "Сумма платежа", "Категория", "Описание"])
     start_date = "01-01-2022"
     result = get_top_transactions(start_date)
     assert result["top_transactions"] == []

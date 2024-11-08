@@ -1,10 +1,10 @@
 import json
-from unittest.mock import patch, mock_open
+from unittest.mock import mock_open, patch
 
 import pandas as pd
 import pytest
 
-from src.transaction_parser import read_transactions_from_excel, load_user_settings
+from src.transaction_parser import load_user_settings, read_transactions_from_excel
 
 
 # Фикстура для создания временных данных
